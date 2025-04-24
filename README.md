@@ -1,7 +1,7 @@
 # OligoGraphix
 A web-based hub for graphic design enthusiasts—learn the history, join a community, and access premium design resources and tools.
 
-# GRAPHICS HUB 🎨✨
+# OLIGOGRAPHICS 🎨✨
 
 **A web-based app for graphic design enthusiasts** — Learn the history, join an amazing community, and access premium design resources and tools.
 

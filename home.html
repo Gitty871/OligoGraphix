@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OligoGraphix Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header>
+  <img src="https://i.postimg.cc/GhdkMpYP/Oligo-Graphix.png" alt="Logo" class="logo" />
+  <nav>
+    <ul>
+      <li><a href="#learn">Learn</a></li>
+      <li><a href="#group">Join</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section id="learn" class="section">
+      <h2>Evolution of Graphic Design</h2>
+      <p>Explore the journey of graphic design from ancient art to digital creativity. Understand how artists and innovators shaped the design world.</p>
+      <a href="learn.html" class="btn">Enter</a>
+    </section>
+
+    <section id="group" class="section">
+      <h2>Join Our Design Group</h2>
+      <p>Connect with other passionate designers. Share ideas and grow together.</p>
+      <a href="https://chat.whatsapp.com/GTlUiNIrVzc0LCExeR2fDM" class="btn" target="_blank">Join WhatsApp Group</a>
+    </section>
+
+    <section id="shop" class="section">
+      <h2>Design Resources & Packages</h2>
+      <p>Get access to exclusive PDF guides, templates, and more!</p>
+      <a href="package.html" class="btn">Explore Packages</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About the Creators</h2>
+      <p>Meet the minds behind OligoGraphix — the vision, the mission, and the passion.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </section>
+  </main>
+  <button id="backToTop" title="Go to top">🔝</button>
+<footer>
+  <p>&copy; 2025 OligoTech. All rights reserved.</p>
+</footer>
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .member-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .member-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border: solid green;
+    }
+
+    .member-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .member-card p {
+      margin-bottom: 15px;
+      color: #555;
+      font-style: italic;
+    }
+
+    .about-section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border: solid blue;
+    }
+
+    .about-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+    }
+    
+  #backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  font-size: 20px;
+  background-color: #2196f3;
+  color: white;
+  border: solid 1px #0BFF3C;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+   }
+
+  #backToTop:hover {
+    background-color: #0d8bf2;
+   }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About Us</h1>
+</header>
+
+<div class="container">
+  <section class="team-section">
+    <div class="member-card">
+      <img src="https://i.postimg.cc/gjY2Hps9/ab121c6a-7f8b-4f14-9888-adafeef7ba32.jpg" alt="Contributor 1">
+      <h3>Joseph K.O. Bonsu</h3>
+      <p>Lead Developer</p>
+    </div>
+    <div class="member-card">
+      <img src="https://i.postimg.cc/k4CJ7CkV/7af124fc-6ac5-4dc9-b85d-6135c9c3928e.jpg" alt="Contributor 2">
+      <h3>Derrick Nartey</h3>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="member-card">
+      <img src="https://i.postimg.cc/xyz123/person3.jpg" alt="Contributor 3">
+      <h3>Noble K. Kwofie<h3>
+      <p>Content Strategist</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>Our Mission</h2>
+    <p>
+      We are a passionate team committed to reshaping the future through innovation, education, and digital transformation.
+      This project was born from a desire to make complex topics simple and accessible for everyone.
+    </p>
+    <p>
+      <strong style="color: blue;">Project Founder:</strong> Joseph K. O. Bonsu 
+      <br><strong style="color: blue;">Role:</strong> Visionary Developer and Educator, etc.)  
+      <br><strong style="color: blue;">Background:</strong> I’m a passionate graphic designer and digital creator, driven by the belief that anyone can go from zero to hero with the right tools and guidance.
+
+I founded a graphic design website with support from two incredible colleagues, aiming to make creativity accessible and practical for everyone — especially beginners. Beyond design, I also manage a growing crypto channel where I teach the basics of cryptocurrency in a simple and clear way.
+
+To build community and connection, I create WhatsApp groups that bring together like-minded learners and creators who want to grow, share ideas, and support each other’s digital journey.
+
+My goal is simple: to help others unlock their potential, master new skills, and rise with confidence — no matter where they’re starting from.
+    </p>
+  </section>
+</div>
+ <button id="backToTop" title="Go to top">🔝</button>
+<script >
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
